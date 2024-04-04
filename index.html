@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Cristian David Ramirez Callejas -->
+  <meta charset="UTF-8">
+  <title>Ruleta de preguntas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <section class="spin-wheel-container">
+    <h1> <strong>Prueba tus conocimientos </strong></h1>
+    <button id="restartButton" style="display: none;">Volver a Jugar</button>
+    <div id="chart"></div>
+    
+    <hr class="styled-hr">
+    <div id="question"><h1></h1></div>
+    <table id="history">
+      <thead>
+        <tr>
+          <th>Nro. de Pregunta</th>
+          <th>Contenido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Historial de preguntas -->
+      </tbody>
+    </table>
+  </section>
+  <audio id="spinSound" src="sound/ruleta.mp3"></audio>
+  <audio id="questionSound" src="sound/pregunta.mp3"></audio>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script  src="script.js"></script>
+</body>
+</html>
